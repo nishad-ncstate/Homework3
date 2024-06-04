@@ -7,37 +7,25 @@ format: html
 
 ## Task 1: Conceptual Questions
 
-1. If your working directory is `myfolder/homework/`, what relative path would you specify to get the file located at `myfolder/MyData.csv`?
-> ../MyData.csv
+1.  If your working directory is `myfolder/homework/`, what relative path would you specify to get the file located at `myfolder/MyData.csv`? \> ../MyData.csv
 
-2. What are the major benefits of using R projects?
-> - Keep related files organized
-> - Simplifies the process of setting the working directory
-> - Facilitates collaboration with Git integration
+2.  What are the major benefits of using R projects? \> - Keep related files organized \> - Simplifies the process of setting the working directory \> - Facilitates collaboration with Git integration
 
-3. What is git and what is GitHub?
-> - **Git** is a version control system for tracking changes in files and coordinating work on those files among multiple people.
-> - **GitHub** is a web-based platform that uses Git for version control and provides hosting for software development and version control using Git.
+3.  What is git and what is GitHub? \> - **Git** is a version control system for tracking changes in files and coordinating work on those files among multiple people. \> - **GitHub** is a web-based platform that uses Git for version control and provides hosting for software development and version control using Git.
 
-4. What are the two main differences between a tibble and a data.frame?
-> - Tibbles do not convert character vectors to factors by default.
-> - Tibbles are more modern and have better printing methods that show only the top 10 rows and the columns that fit on the screen.
+4.  What are the two main differences between a tibble and a data.frame? \> - Tibbles do not convert character vectors to factors by default. \> - Tibbles are more modern and have better printing methods that show only the top 10 rows and the columns that fit on the screen.
 
-5. Rewrite the following nested function call using base R's chaining operator:
+5.  Rewrite the following nested function call using base R's chaining operator:
 
-as_tibble(iris) |> 
-  select(starts_with("Petal"), Species) |> 
-  filter(Petal.Length < 1.55) |> 
-  arrange(Species)
+as_tibble(iris) \|\> select(starts_with("Petal"), Species) \|\> filter(Petal.Length \< 1.55) \|\> arrange(Species)
 
-6. What is meant by long format data and wide format data? Which do we generally prefer for statistical analysis?
+6.  What is meant by long format data and wide format data? Which do we generally prefer for statistical analysis?
 
 Long format data has one column for all values and another column for variable names. It is generally preferred for statistical analysis.Wide format data has separate columns for each variable.
 
 Task 2: Reading Delimited Data
 
-1. Glass Data:
----
+## 1. Glass Data:
 
 ```{r}
 library(tidyverse)
